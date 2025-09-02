@@ -22,6 +22,7 @@ import cafe.adriel.voyager.core.screen.Screen
 import cafe.adriel.voyager.navigator.LocalNavigator
 import cafe.adriel.voyager.navigator.Navigator
 import cafe.adriel.voyager.navigator.currentOrThrow
+import org.basic.project.bottomBar.BottomBarScreen
 
 @Composable
 fun App() {
@@ -107,6 +108,24 @@ class MainScreen: Screen {
                     text = "Navegar 3.Pantalla"
                 )
             }
+
+            Spacer(
+                modifier = Modifier
+                    .height(30.dp)
+            )
+
+            // Nuevo botón
+            Button(
+                onClick = {
+                    navigator.push(
+                        item = BottomBarScreen()
+                    )
+                }
+            ) {
+                Text(
+                    text = "BottomBar"
+                )
+            }
         }
     }
 }
@@ -133,7 +152,7 @@ class SecondScreen: Screen {
 
             Spacer(
                 modifier = Modifier
-                    .height(20.dp)
+                    .height(30.dp)
             )
 
             Button(
@@ -171,7 +190,7 @@ class ThirdScreen : Screen {
 
             Spacer(
                 modifier = Modifier
-                    .height(20.dp)
+                    .height(30.dp)
             )
 
             Button(
