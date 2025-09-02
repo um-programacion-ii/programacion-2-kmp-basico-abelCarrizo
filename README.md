@@ -1,4 +1,8 @@
-This is a Kotlin Multiplatform project targeting Android, iOS, Web, Desktop (JVM).
+## 👨‍🎓 Información del Alumno
+- **Nombre y Apellido**: Abel Carrizo
+- **Legajo**: 59164
+
+## This is a Kotlin Multiplatform project targeting Android, iOS, Web, Desktop (JVM).
 
 * [/composeApp](./composeApp/src) is for code that will be shared across your Compose Multiplatform applications.
   It contains several subfolders:
